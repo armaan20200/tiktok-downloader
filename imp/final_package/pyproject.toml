@@ -1,0 +1,25 @@
+[project]
+name = "ttdownloader"
+version = "1.0.0"
+description = "TikTok video downloader without watermark - Fast, secure, and user-friendly"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.1.1",
+    "yt-dlp>=2024.12.13",
+    "gunicorn>=23.0.0",
+]
+
+[project.urls]
+homepage = "https://github.com/yourusername/ttdownloader"
+repository = "https://github.com/yourusername/ttdownloader"
+documentation = "https://github.com/yourusername/ttdownloader#readme"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["app", "main"]
+
+[project.scripts]
+ttdownloader = "main:main"
